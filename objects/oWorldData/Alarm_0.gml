@@ -1,0 +1,1 @@
+checkForNewPlayer = true;
