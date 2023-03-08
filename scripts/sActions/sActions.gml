@@ -74,7 +74,7 @@ function stop_mining(player_direction, chosen_time) {
 function start_chopping(player_direction, chosen_time) {
 	
 	audio_play_sound(woodChopSound, 10, true);
-	global.Chopping = true;
+	//global.Chopping = true;
 	other.alarm[0] = chosen_time;
 	
 	if player_direction == 90 {
@@ -109,9 +109,10 @@ function start_chopping(player_direction, chosen_time) {
 function stop_chopping(player_direction, chosen_time) {
 	audio_stop_sound(woodChopSound);
 	audio_play_sound(treeFallSound, 10, false, 1, 0.0, 1.25);
-	global.Chopping = false;
-	other.ready = false;
-	other.alarm[1] = chosen_time
+	//global.Chopping = false;
+	player.amiChopping = 0;
+	ready = false;
+	alarm[1] = chosen_time
 	
 	if player_direction == 90 {
 		with player {

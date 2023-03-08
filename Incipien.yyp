@@ -64,6 +64,7 @@
     {"id":{"name":"oFarmer","path":"objects/oFarmer/oFarmer.yy",},"order":2,},
     {"id":{"name":"sSweetPotato","path":"sprites/sSweetPotato/sSweetPotato.yy",},"order":12,},
     {"id":{"name":"oIronOre","path":"objects/oIronOre/oIronOre.yy",},"order":9,},
+    {"id":{"name":"oOak104","path":"objects/oOak104/oOak104.yy",},"order":50,},
     {"id":{"name":"sSweetPotatoPlant","path":"sprites/sSweetPotatoPlant/sSweetPotatoPlant.yy",},"order":13,},
     {"id":{"name":"oSnowPeaPlant","path":"objects/oSnowPeaPlant/oSnowPeaPlant.yy",},"order":42,},
     {"id":{"name":"Inventory","path":"scripts/Inventory/Inventory.yy",},"order":7,},
