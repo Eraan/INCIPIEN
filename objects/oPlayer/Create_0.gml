@@ -1,6 +1,7 @@
 inventory = ds_list_create();
 currentPlayer = true;
 playerNumber = 0;
+playerId = id
 
 global.userStats.user_id = id;
 global.playerHealth = 2;
@@ -30,3 +31,4 @@ key_up = 0;
 key_down = 0;
 key_left = 0;
 key_right = 0;
+amiChopping = 0;
