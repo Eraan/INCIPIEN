@@ -1,12 +1,14 @@
 if place_meeting(x, y - 16, player) or place_meeting(x, y + 16, player) or place_meeting(x - 16, y, player) or place_meeting(x + 16, y, player) {
-	stop_chopping(directionFromPlayer, 960)
+	stop_chopping(directionFromPlayer, 60)
 	global.userLevels.forestry_xp += 20;
 	temp_message(x + 8, y - 8, "+ 20 XP");
-	add_pine_logs();
+	add_oak_logs();
+	//player = noone;
 } else {
 	ready = true;
-	global.Chopping = false;
-	player.amiChopping = 0;
+	player.amiChopping = false;
+	image_index = 0;
+	player = noone;
 }
 
 
