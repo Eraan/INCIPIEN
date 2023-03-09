@@ -9,5 +9,3 @@ for (var i = 0; i < _size; i++) {
 	draw_set_color(c_white);
 	draw_text(_x, _y, string(_item));
 }
-
-chop_tree();

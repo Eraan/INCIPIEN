@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oOak104",
+  "name": "owwwOak",
   "spriteId": {
     "name": "sOak1",
     "path": "sprites/sOak1/sOak1.yy",

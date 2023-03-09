@@ -9,18 +9,22 @@ if (currentPlayer) {
 
 
 // Movement
-if amiChopping == false {
+//if amiChopping == false {
 	if (key_up) {
 		state = movementState.UP;
+		amiChopping = false;
 	}
 	if (key_down) {
 		state = movementState.DOWN;
+		amiChopping = false;
 	}
 	if (key_left) {
 		state = movementState.LEFT;
+		amiChopping = false;
 	}
 	if (key_right) {
 		state = movementState.RIGHT;
+		amiChopping = false;
 	}
 
 	if keyboard_check_released(ord("W"))
@@ -36,6 +40,7 @@ if amiChopping == false {
 				//set_player_stat()
 			break;
 			case movementState.UP:
+				
 
 				if (isMoving == false) {
 				
@@ -53,6 +58,7 @@ if amiChopping == false {
 				
 			break;
 			case movementState.DOWN:
+				
 				if (isMoving == false) {
 		
 					if !place_meeting(x, y + gridSize, oCollision) {
@@ -68,7 +74,9 @@ if amiChopping == false {
 				}
 			break;
 			case movementState.LEFT:
+				
 				if (isMoving == false) {
+					
 					if !place_meeting(x - gridSize, y, oCollision) {
 						direction = 180;
 						sprite_index = sPlayerLeft;
@@ -82,7 +90,9 @@ if amiChopping == false {
 				}
 			break;
 			case movementState.RIGHT:
+				
 				if (isMoving == false) {
+					
 					if !place_meeting(x + gridSize, y, oCollision) {
 						direction = 0;
 						sprite_index = sPlayerRight;
@@ -123,4 +133,4 @@ if amiChopping == false {
 			image_speed = 0;
 		}
 	}
-}
+//}
