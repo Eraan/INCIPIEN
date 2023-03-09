@@ -6,7 +6,6 @@ if place_meeting(x, y - 16, player) or place_meeting(x, y + 16, player) or place
 } else {
 	ready = true;
 	global.Chopping = false;
-	player.amiChopping = 0;
 }
 
 

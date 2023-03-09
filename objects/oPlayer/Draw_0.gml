@@ -1,9 +1,27 @@
 draw_self();
 
 //CHOPPING
-if position_meeting(device_mouse_x(0), device_mouse_y(0), oOak104) { // && mouse_check_button_pressed(mb_left)
-	if place_meeting(x, y - 16, oOak104) or place_meeting(x, y + 16, oOak104) or place_meeting(x - 16, y, oOak104) or place_meeting(x + 16, y, oOak104) {
-		id.amiChopping = true;
+
+
+if (currentPlayer) && oPine.ready == true {	
+	if place_meeting(x, y - 16, oPine) or place_meeting(x, y + 16, oPine) or place_meeting(x - 16, y, oPine) or place_meeting(x + 16, y, oPine) {
+		if position_meeting(device_mouse_x(0), device_mouse_y(0), oPine) {
+			
+//		if (currentPlayer) && oOak104.ready == true {
+			amiChopping = true;
+		} 
+	}
+}
+
+
+
+if (currentPlayer) && oOak.ready == true {
+	if place_meeting(x, y - 16, oOak) or place_meeting(x, y + 16, oOak) or place_meeting(x - 16, y, oOak) or place_meeting(x + 16, y, oOak) {
+		if position_meeting(device_mouse_x(0), device_mouse_y(0), oOak) {
+			
+//		if (currentPlayer) && oOak104.ready == true {
+			amiChopping = true;
+		} 
 	}
 }
 

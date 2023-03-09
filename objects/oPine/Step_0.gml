@@ -1,5 +1,10 @@
-directionFromPlayer = point_direction(oPlayer.x, oPlayer.y, x, y);
-player = oPlayer;
+for (var i = 0; i < instance_number(oPlayer); ++i) {
+    var curPlayer = instance_find(oPlayer, i)
+	if curPlayer.amiChopping == true {
+		player = curPlayer;
+		directionFromPlayer = point_direction(curPlayer.x, curPlayer.y, x, y);
+	}
+}
 
 switch chooseSprite {
 	case 1:
